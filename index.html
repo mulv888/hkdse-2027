@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2027 HKDSE 複習總控台 | 中國語文 · ICT 資訊及通訊科技 · 物理 Physics</title>
+  <title>2027 HKDSE 複習總控台 | 中國語文 · 數學必修 · ICT 資訊及通訊科技 · 物理 Physics</title>
   <style>
     :root {
       --bg: #f6f7fb;
@@ -26,6 +26,10 @@
       --phy: #7c3aed;
       --phy-soft: #f5f3ff;
       --phy-border: #ddd6fe;
+
+      --math: #0f766e;
+      --math-soft: #f0fdfa;
+      --math-border: #99f6e4;
 
       --emerald: #059669;
       --emerald-soft: #ecfdf5;
@@ -60,6 +64,10 @@
       --phy: #a78bfa;
       --phy-soft: rgba(124, 58, 237, 0.18);
       --phy-border: rgba(167, 139, 250, 0.35);
+
+      --math: #2dd4bf;
+      --math-soft: rgba(15, 118, 110, 0.2);
+      --math-border: rgba(45, 212, 191, 0.35);
 
       --emerald: #34d399;
       --emerald-soft: rgba(5, 150, 105, 0.18);
@@ -254,7 +262,7 @@
 
     .subjects-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
       margin-bottom: 32px;
     }
@@ -275,6 +283,7 @@
       box-shadow: var(--shadow-lg);
     }
     .card-chi { --accent: var(--chi); --accent-soft: var(--chi-soft); --accent-border: var(--chi-border); }
+    .card-math { --accent: var(--math); --accent-soft: var(--math-soft); --accent-border: var(--math-border); }
     .card-ict { --accent: var(--ict); --accent-soft: var(--ict-soft); --accent-border: var(--ict-border); }
     .card-phy { --accent: var(--phy); --accent-soft: var(--phy-soft); --accent-border: var(--phy-border); }
 
@@ -430,7 +439,7 @@
       <div>
         <div class="hero-eyebrow">2027 屆 HKDSE 考生專屬 · 離線／線上雙支援</div>
         <h1>一站式 DSE 核心與選修科複習寶典</h1>
-        <p>整合 <strong>中國語文</strong>、<strong>資訊及通訊科技（ICT）</strong> 與 <strong>物理（Physics）</strong> 三大科目精讀筆記、互動模擬實驗室、公式圖表庫、歷屆真題詳解與即時自測系統。所有溫習掌握進度與重點收藏會自動儲存在您的裝置瀏覽器中。</p>
+        <p>整合 <strong>中國語文</strong>、<strong>數學必修部分（Mathematics）</strong>、<strong>資訊及通訊科技（ICT）</strong> 與 <strong>物理（Physics）</strong> 四大科目精讀筆記、Paper 2 MC 秒殺攻略、Paper 1 壓軸難題庫、互動模擬實驗室、公式圖表庫與歷屆真題詳解。所有溫習掌握進度與錯題收藏均自動儲存在本地瀏覽器中。</p>
       </div>
       <div class="countdown-card">
         <div class="countdown-label">距離 2027 HKDSE 筆試開考（預計 2027 年 4 月 8 日）</div>
@@ -479,6 +488,29 @@
           <strong id="progChi">已掌握 0 項 · ★ 0</strong>
         </div>
         <a class="enter-btn" href="./chinese/index.html">進入中國語文複習室 →</a>
+      </article>
+
+      <!-- Mathematics -->
+      <article class="subject-card card-math">
+        <div class="card-top">
+          <span class="subject-tag">核心科目 · 12 大 Topic · 雙語切換</span>
+          <span class="subject-icon">📐</span>
+        </div>
+        <h3>數學科 (Mathematics)</h3>
+        <div class="subject-sub">Paper 2 MC 秒殺技巧 · Paper 1 壓軸難題 · 計數機 Program</div>
+        <p class="subject-desc">緊扣 HKDSE 數學必修部分 12 大 Topic，系統剖析 Paper 2 八大秒殺通法與課題絕技，並精選 Paper 1 Section A(2) / B 壓軸難題與 M/A 評分詳解。</p>
+        <ul class="feature-list">
+          <li>Paper 2 八大跨課題通法 ＋ 12 大 Topic 秒殺絕技與陷阱</li>
+          <li>13 道 Paper 1 壓軸難題（含破題思路、SVG 圖與 M/A 給分點）</li>
+          <li>24 道按 Topic 分類的 Paper 2 限時刷題（秒殺法＋常規解）</li>
+          <li>Casio fx-50FH II 四大神級 Program 與內置模式操作攻略</li>
+          <li>考卷不印的 5** 核心公式總表 ＋ 個人專屬錯題本</li>
+        </ul>
+        <div class="progress-mini">
+          <span>本地溫習進度</span>
+          <strong id="progMath">已攻克 0 / 25 · ★ 0</strong>
+        </div>
+        <a class="enter-btn" href="./maths/index.html">進入數學科複習室 →</a>
       </article>
 
       <!-- ICT -->
@@ -584,6 +616,8 @@
       }
       document.getElementById("progChi").textContent =
         "已掌握 " + countObj("dse2027_chi_done_v1") + " / 25 · ★ " + countObj("dse2027_chi_star_v1");
+      document.getElementById("progMath").textContent =
+        "已攻克 " + countObj("dse2027_math_mastered") + " / 25 · ★ " + countObj("dse2027_math_bookmarks");
       document.getElementById("progIct").textContent =
         "已掌握 " + countObj("dse_ict_2027_mastered") + " 項 · ★ " + countObj("dse_ict_2027_bookmarks");
       document.getElementById("progPhy").textContent =
