@@ -5,7 +5,7 @@
 window.MATH_TOPICS = [
   { id: "algebra",    code: "T01", zh: "代數、多項式與恆等式",       en: "Algebra, Polynomials & Identities",      section: "A(1)/A(2)/B" },
   { id: "quadratic",  code: "T02", zh: "二次方程、函數與圖像變換",   en: "Quadratics, Functions & Transformations", section: "A(2)/B 必考" },
-  { id: "explog",     code: "T03", zh: "指數、對數與進制轉換",       en: "Indices, Logarithms & Number Systems",   section: "B 必考" },
+  { id: "explog",     code: "T03", zh: "指數、對數與複數",         en: "Indices, Logarithms & Complex Numbers",  section: "B 必考" },
   { id: "variation",  code: "T04", zh: "變分、百分數、比與估算誤差", en: "Variations, Percentages & Estimation",   section: "A(1)/A(2)" },
   { id: "lp",         code: "T05", zh: "不等式與線性規劃",           en: "Inequalities & Linear Programming",      section: "B 高頻" },
   { id: "seq",        code: "T06", zh: "等差與等比數列 (AS & GS)",   en: "Arithmetic & Geometric Sequences",       section: "B 壓軸常客" },
@@ -27,7 +27,7 @@ window.MATH_META = {
       duration: "2 小時 15 分鐘（135 分鐘）",
       total: "105 分",
       breakdown: [
-        { part: "甲部(1) Section A(1)（35 分 · 約 9 題）", time: "限時 22–25 分鐘", tip: "基礎送分盤（主項變換、因式分解、指數、不等式、百分數、極坐標、基本幾何統計），務求零失誤全取 35/35！" },
+        { part: "甲部(1) Section A(1)（35 分 · 約 9 題）", time: "限時 22–25 分鐘", tip: "基礎送分盤（主項變換、因式分解、指數、不等式、百分數、坐標變換、基本幾何統計），務求零失誤全取 35/35！" },
         { part: "甲部(2) Section A(2)（35 分 · 約 5 題）", time: "限時 38–42 分鐘", tip: "中階拉分盤（多項式除法、變分應用、統計箱形圖、圓方程／軌跡、立體平截頭體求積、圓幾何證明），注意「同意嗎？試解釋」題必須寫清比較數值與結論！" },
         { part: "乙部 Section B（35 分 · 約 5 題）", time: "限時 55 分鐘 ＋ 15 分鐘檢查", tip: "奪星分水嶺（對數／圖像變換、排列組合與概率、等差等比數列與複利、3D 三角學二面角與最大角、坐標幾何圓與四心壓軸）。即使做不完最後一小題，(a)(b) 部分常佔 6–8 分，切勿全題放棄！" }
       ]
@@ -39,7 +39,7 @@ window.MATH_META = {
       total: "45 題（每題 1 分）",
       breakdown: [
         { part: "甲部 Section A（第 1–30 題）", time: "目標 30–35 分鐘（平均 1 分鐘/題）", tip: "切忌執着傳統長算式！善用代數字法、計數機 EQN/Program、極端值測試與比例圖形直觀判斷，為乙部爭取充裕時間。" },
-        { part: "乙部 Section B（第 31–45 題）", time: "目標 30 分鐘（平均 2 分鐘/題）", tip: "集中考核 HCF/LCM、對數圖像、進制轉換、複數、線性規劃、AS/GS、3D 三角學、圓切線與弦角、四心、排列組合與統計變換——絕大部分均有固定秒殺套路！" },
+        { part: "乙部 Section B（第 31–45 題）", time: "目標 30 分鐘（平均 2 分鐘/題）", tip: "集中考核 HCF/LCM、對數圖像、複數、線性規劃、AS/GS、3D 三角學、圓切線與弦角、四心、排列組合與統計變換——絕大部分均有固定秒殺套路！" },
         { part: "最後覆檢與選項平衡檢查", time: "預留 10 分鐘", tip: "核對答題紙有否填錯行；對完全卡關的 1–2 題，先用排除法刪去必錯選項（I/II/III 題尤為有效），絕不可留空！" }
       ]
     }
@@ -80,9 +80,9 @@ window.MATH_META = {
       usageTip: "【Paper 2 必考送分題】切換到 `MODE 2 (CMPLX)`，直接把題目分數輸入（如有未知數 $k$，先設 $k=2$ 代數字測試實部／虛部！），5 秒內必中！"
     },
     {
-      name: "內置 Mode 3 (BASE-N) — 二進制與十六進制秒轉",
-      use: "切換 `DEC` / `BIN` / `HEX`，直接做十六進制與二進制加減或數值互換。",
-      usageTip: "【進制題大數拆解法】fx-50FH II 支援最多 10 位二進制／32-bit 整數；若題目數字太大（如 $2^{14}+2^{11}$），記住核心法則：每 4 個二進制位 ＝ 1 個十六進制位，從右邊每 4 位一組切開即可肉眼心算！"
+      name: "內置 CALC / Memory A–F — 方程代入與精確值存儲",
+      use: "用 `CALC` 快速將選項數值代入複雜代數式／對數式，並以 `STO` 儲存 3D 三角學中間精確小數。",
+      usageTip: "【Paper 1 & 2 零失誤秘訣】3D 長題目切勿用四捨五入的中間答案繼續計餘弦定理！每次算出邊長或角度後按 `SHIFT` + `RCL` 存入 `A / B / C` 記憶鍵，確保最後答案精確至 3 位有效數字！"
     },
     {
       name: "內置 SD (統計模式) & Formula 02/03 (聯立方程)",
