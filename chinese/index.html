@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="light" data-readmode="parallel">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2027 HKDSE 中國語文複習全攻略 | 十二篇範文精讀 · 文言字詞合集 · 歷屆真題 · 卷二實用文與命題寫作</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Sticky Top Header -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="開啟目錄選單" title="目錄選單">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <a href="../index.html" class="icon-btn" style="width:auto;padding:0 10px;font-size:0.78rem;font-weight:700;gap:4px;text-decoration:none;" title="返回 2027 DSE 科目總覽">← 總覽</a>
+        <a href="#overview" class="brand" id="brandLink">
+          <span class="brand-badge">DSE 2027</span>
+          <span class="brand-text">
+            <span class="brand-title">HKDSE 中國語文複習寶典</span>
+            <span class="brand-sub">卷一十二篇範文 · 字詞總集 · 歷屆真題 · 卷二實用文與長文寫作</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Global Instant Search -->
+      <div class="search-wrap" id="searchWrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" id="globalSearch" class="search-input" autocomplete="off" placeholder="搜尋範文、文言字詞、句式、歷屆試題、實用文格式（如：克己復禮、陟罰臧否、建議書、駁論）..." />
+        <kbd class="search-kbd">/</kbd>
+        <div class="search-results" id="searchResults" hidden></div>
+      </div>
+
+      <!-- Header Controls -->
+      <div class="topbar-right">
+        <div class="mode-switch" role="group" aria-label="範文閱讀模式">
+          <button class="mode-btn active" data-set-mode="parallel" title="古文與白話語譯並列對照">古白對照</button>
+          <button class="mode-btn" data-set-mode="recite" title="隱藏語譯，方便背誦與自我測試">背誦默書</button>
+        </div>
+        <button class="icon-btn" id="themeToggle" aria-label="切換深色或淺色模式" title="切換深色／淺色護眼模式">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="icon-btn print-btn" id="printBtn" aria-label="列印當前溫習筆記" title="列印當前溫習筆記">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Primary Section Navigation Tabs -->
+    <nav class="section-tabs" id="sectionTabs" aria-label="主要複習單元">
+      <div class="section-tabs-inner">
+        <button class="tab-btn active" data-view="overview" id="tab-overview">
+          <span class="tab-dot dot-vermilion"></span>
+          <span>考評總覽與2027預測</span>
+        </button>
+        <button class="tab-btn" data-view="classics" id="tab-classics">
+          <span class="tab-dot dot-jade"></span>
+          <span>卷一：十二篇範文精讀</span>
+        </button>
+        <button class="tab-btn" data-view="lexicon" id="tab-lexicon">
+          <span class="tab-dot dot-amber"></span>
+          <span>文言字詞與語法合集</span>
+        </button>
+        <button class="tab-btn" data-view="pastpapers" id="tab-pastpapers">
+          <span class="tab-dot dot-indigo"></span>
+          <span>歷屆真題甲部解析 (2018–2026)</span>
+        </button>
+        <button class="tab-btn" data-view="practical" id="tab-practical">
+          <span class="tab-dot dot-cyan"></span>
+          <span>卷二甲：實用文格式大全</span>
+        </button>
+        <button class="tab-btn" data-view="narrative" id="tab-narrative">
+          <span class="tab-dot dot-plum"></span>
+          <span>卷二乙：記敘抒情寫作</span>
+        </button>
+        <button class="tab-btn" data-view="argumentative" id="tab-argumentative">
+          <span class="tab-dot dot-slate"></span>
+          <span>卷二乙：議論文思辨攻略</span>
+        </button>
+        <button class="tab-btn" data-view="quiz" id="tab-quiz">
+          <span class="tab-dot dot-emerald"></span>
+          <span>自測題庫與名句默書</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Workspace Layout -->
+  <div class="app-shell">
+    <!-- Left Context Sidebar -->
+    <aside class="sidebar" id="sidebar" aria-label="章節導航">
+      <div class="sidebar-header">
+        <div class="progress-widget">
+          <div class="progress-row">
+            <span class="progress-label">十二篇及寫作掌握進度</span>
+            <span class="progress-pct" id="masteryPct">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="masteryFill" style="width: 0%"></div>
+          </div>
+          <div class="progress-meta">
+            <span id="masteryCount">已掌握 0 / 0 個核心單元</span>
+            <button class="text-link-btn" id="filterBookmarksBtn">★ 重點收藏 (0)</button>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-nav" id="sidebarNav"></div>
+    </aside>
+
+    <!-- Mobile Drawer Backdrop -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- Main Dynamic View -->
+    <main class="main-content" id="mainContent"></main>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="回到頂部" title="回到頂部">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Global Data Registries (100% offline file:// compatible, zero external CDN) -->
+  <script>
+    window.CHI_META = {};
+    window.CHI_CLASSICS = [];
+    window.CHI_COMPARISONS = [];
+    window.CHI_LEXICON = {};
+    window.CHI_PASTPAPERS = [];
+    window.CHI_PRACTICAL = {};
+    window.CHI_NARRATIVE = {};
+    window.CHI_ARGUMENTATIVE = {};
+    window.CHI_QUIZZES = {};
+  </script>
+
+  <!-- Data Modules -->
+  <script src="data/meta.js"></script>
+  <script src="data/classics_1_preqin.js"></script>
+  <script src="data/classics_2_hanhan.js"></script>
+  <script src="data/classics_3_tangsong.js"></script>
+  <script src="data/classics_4_poetry.js"></script>
+  <script src="data/lexicon.js"></script>
+  <script src="data/pastpapers.js"></script>
+  <script src="data/paper2_practical.js"></script>
+  <script src="data/paper2_narrative.js"></script>
+  <script src="data/paper2_argumentative.js"></script>
+  <script src="data/quizzes.js"></script>
+
+  <!-- Interactive Application Scripts -->
+  <script src="js/quiz.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
