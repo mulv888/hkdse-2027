@@ -3,11 +3,11 @@
 # 🎓 2027 HKDSE 全科複習總控台 (HKDSE 2027 Revision Hub)
 
 **專為 2027 屆香港中學文憑試（HKDSE）考生打造的一站式互動複習平台**  
-涵蓋 **中國語文** · **數學必修 (Mathematics)** · **資訊及通訊科技 (ICT)** · **物理 (Physics)**
+涵蓋 **中國語文** · **英國語文 (English)** · **數學必修 (Mathematics)** · **資訊及通訊科技 (ICT)** · **物理 (Physics)**
 
 [![Deploy to GitHub Pages](https://github.com/mulv888/hkdse-2027/actions/workflows/deploy.yml/badge.svg)](https://github.com/mulv888/hkdse-2027/actions/workflows/deploy.yml)
 ![HKDSE 2027](https://img.shields.io/badge/HKDSE-2027_Syllabus-b91c1c?style=flat-square)
-![Subjects](https://img.shields.io/badge/Subjects-Chinese%20%7C%20Maths%20%7C%20ICT%20%7C%20Physics-2563eb?style=flat-square)
+![Subjects](https://img.shields.io/badge/Subjects-Chinese%20%7C%20English%20%7C%20Maths%20%7C%20ICT%20%7C%20Physics-2563eb?style=flat-square)
 ![Zero Dependencies](https://img.shields.io/badge/Architecture-Pure_HTML%2FCSS%2FJS-059669?style=flat-square)
 ![Offline Ready](https://img.shields.io/badge/Mode-Online_%26_Offline_Ready-7c3aed?style=flat-square)
 
@@ -23,8 +23,9 @@
 
 | 入口 / 科目 | 線上直達網址 | 語言 / 閱讀模式 | 核心亮點 |
 | :--- | :--- | :--- | :--- |
-| 🏠 **2027 DSE 複習總控台** | [mulv888.github.io/hkdse-2027/](https://mulv888.github.io/hkdse-2027/) | 繁體中文 | 開考倒數計時器、四科溫習進度總覽、一鍵跳轉各科 |
+| 🏠 **2027 DSE 複習總控台** | [mulv888.github.io/hkdse-2027/](https://mulv888.github.io/hkdse-2027/) | 繁體中文 | 開考倒數計時器、五科溫習進度總覽、一鍵跳轉各科 |
 | 📜 **中國語文科 (Chinese)** | [mulv888.github.io/hkdse-2027/chinese/](https://mulv888.github.io/hkdse-2027/chinese/) | 古白對照 / 背誦默書 | 十二篇範文精讀（16 篇）、文言字詞總集、2018–2026 真題、卷二寫作與名句默書 |
+| 🖋️ **英國語文科 (English)** | [mulv888.github.io/hkdse-2027/english/](https://mulv888.github.io/hkdse-2027/english/) | 精讀 / 背誦遮蓋 / 朗讀 | Paper 2 十大文體格式、6 篇 5** 標註範文與套話升呢、Paper 3A 八大聆聽題型、Paper 4 口試話術連接詞與 1m/8m 計時器 |
 | 📐 **數學必修 (Mathematics)** | [mulv888.github.io/hkdse-2027/maths/](https://mulv888.github.io/hkdse-2027/maths/) | 繁中 / 中英對照 / ENG | Paper 2 八大通法與 12 Topic 秒殺技巧、Paper 1 壓軸難題與 M/A 評分詳解、計數機 Program、限時刷題與錯題本 |
 | 💻 **資訊及通訊科技 (ICT)** | [mulv888.github.io/hkdse-2027/ict/](https://mulv888.github.io/hkdse-2027/ict/) | 繁中 / 中英對照 / ENG | 必修 A–E、選修 A 數據庫（SQL）、選修 C Python、互動實驗室、速查表 |
 | ⚛️ **物理科 (Physics)** | [mulv888.github.io/hkdse-2027/physics/](https://mulv888.github.io/hkdse-2027/physics/) | 繁中 / 中英對照 / ENG | Book 1–5、選修 E2 原子世界、選修 E3 能源使用、公式推導寶庫、高清 SVG 圖表 |
@@ -74,7 +75,19 @@
 
 ---
 
-### 2. 📐 數學科必修部分 Mathematics (`maths/`)
+### 2. 🖋️ 英國語文科 English Language (`english/`)
+緊貼 **2024–2027 最新 HKDSE 考評大綱**（Paper 2 Part B 四選一制），針對寫作（Paper 2）、聆聽必答（Paper 3A）及口試（Paper 4）重點打造：
+
+- **考評總覽與兩小時配速藍圖**：完整列出 Paper 1–4 比重（20% / 25% / 30% / 10% + SBA 15%）、Paper 2 C/L/O 21 分評分細則、120 分鐘黃金配速及三階段備戰路線圖。
+- **Paper 2 十大文體格式合集**：涵蓋 Letter to the Editor、Formal Letter / Complaint / Application、Argumentative Essay、Feature Article、Proposal、Report、Speech、Blog / Informal Email、Short Story 及 Review；配備擬真答題紙排版批註、稱謂下款速查矩陣、考場地雷與一鍵複製開場句。
+- **Paper 2 高分 5** 範文精讀室（6 篇全真示範）**：收錄 AI 教育致編輯信、Hustle Culture 議論文、綠色校園天台建議書、Gen Z 本土工藝專題文章、早會演講辭及 Part A 235 字校園網誌；內置**「🔍 5** 亮點標註」互動解析**（依詞彙、高階句型、銜接結構分色標示）、C/L/O 考官點評、可偷師金句表與語音朗讀。
+- **Paper 2 套話與句式升呢庫**：六大段落功能高分例句庫（支援**「背誦遮蓋」填空自測**）、L3 ➔ L5** 六大黃金句型改造實驗室（否定倒裝、分詞構句、強調句、虛擬語氣等）及十大告別平庸字 C1/C2 替換表。
+- **Paper 3A 聆聽八大題型示例與排雷大全**：覆蓋表格改口陷阱、原創 SVG 平面圖方位標註、流程圖倒敘、選擇題干擾排雷、對比勾選、語氣態度推斷、開放長答濃縮及 SVG 數據趨勢配對；附錄音原文折疊、Web Speech 模擬練耳朗讀及十大易錯串字表。
+- **Paper 4 口試話術、自然連接詞與計時模擬室**：Part A 小組討論 7 大實戰場景話術（含互動延伸與冷場／麥霸救場神句）、自然口語 vs 生硬書面連接詞總表、Part B 一分鐘 IR 五大題型 10-22-18-10 藍圖與示範、港生 Chinglish 修正表，以及內建 **1 分鐘 IR / 8 分鐘 GI 倒數計時隨機抽題器**與 14 題跨卷互動自測題庫。
+
+---
+
+### 3. 📐 數學科必修部分 Mathematics (`maths/`)
 嚴格按 **12 大考評 Topic**（代數多項式、二次函數變換、指數對數複數、變分誤差、線性規劃、AS/GS、平面與圓幾何、坐標圓與軌跡、三角形四心、2D/3D 三角學與求積、排列組合概率、統計離差）分類編排，配備離線數學公式排版與高清 SVG 幾何圖表：
 
 - **考試總覽與計數機攻略**：Paper 1（65%）與 Paper 2（35%）黃金配速、Level 4–5** 分數線參考，以及 Casio fx-50FH II / fx-3650P II 四大神級 Program 與 `CMPLX` / `SD` / `CALC` 模式零失誤操作指南。
@@ -84,7 +97,7 @@
 
 ---
 
-### 3. 💻 資訊及通訊科技科 ICT (`ict/`)
+### 4. 💻 資訊及通訊科技科 ICT (`ict/`)
 支援 **繁體中文 / 中英對照 / English** 一鍵切換（快捷鍵 `L`），專攻 2027 DSE 新課程重點：
 
 - **Paper 1 必修部分（Unit A – E）**：資訊處理（編碼、數據驗證與核對）、電腦系統基礎、互聯網及其應用、基本編程概念、資訊及通訊科技對社會的影響。
@@ -94,7 +107,7 @@
 
 ---
 
-### 4. ⚛️ 物理科 Physics (`physics/`)
+### 5. ⚛️ 物理科 Physics (`physics/`)
 同樣支援 **繁體中文 / 中英對照 / English** 雙語切換，配備原創離線數學公式排版與高清可縮放 SVG 物理圖表：
 
 - **Paper 1 必修部分（Book 1 – 5）**：
@@ -122,9 +135,10 @@ flowchart LR
     D --> E["自動發布至 GitHub Pages<br/>mulv888.github.io/hkdse-2027/"]
     E --> F1["🏠 總控台首頁 /"]
     E --> F2["📜 中國語文 /chinese/"]
-    E --> F3["📐 數學必修 /maths/"]
-    E --> F4["💻 ICT /ict/"]
-    E --> F5["⚛️ 物理 /physics/"]
+    E --> F3["🖋️ 英國語文 /english/"]
+    E --> F4["📐 數學必修 /maths/"]
+    E --> F5["💻 ICT /ict/"]
+    E --> F6["⚛️ 物理 /physics/"]
 ```
 
 ---
@@ -133,7 +147,7 @@ flowchart LR
 
 ```text
 hkdse-2027/
-├── index.html                        # 2027 HKDSE 複習總控台首頁（倒數計時 + 三科進度儀表板）
+├── index.html                        # 2027 HKDSE 複習總控台首頁（倒數計時 + 五科進度儀表板）
 ├── README.md                         # 專案說明文件
 ├── .nojekyll                         # 告知 GitHub Pages 直接提供靜態資源
 ├── .gitignore                        # 排除系統暫存檔與壓縮檔
@@ -145,6 +159,11 @@ hkdse-2027/
 │   ├── css/styles.css
 │   ├── data/                         # 十二篇範文(4檔)、字詞合集、歷屆真題、卷二寫作(3檔)、題庫
 │   └── js/                           # app.js、quiz.js
+├── english/                          # 🖋️ 英國語文科奪星寶典
+│   ├── index.html
+│   ├── css/styles.css
+│   ├── data/                         # 總覽、P2 格式/範文/套話、P3A 聆聽題型、P4 口試話術、跨卷題庫
+│   └── js/                           # app.js、practice.js（SVG 圖表、語音朗讀、口試計時器、自測）
 ├── maths/                            # 📐 數學必修科奪星寶典
 │   ├── index.html
 │   ├── css/styles.css

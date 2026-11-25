@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2027 HKDSE 複習總控台 | 中國語文 · 數學必修 · ICT 資訊及通訊科技 · 物理 Physics</title>
+  <title>2027 HKDSE 複習總控台 | 中國語文 · 英國語文 · 數學必修 · ICT 資訊及通訊科技 · 物理 Physics</title>
   <style>
     :root {
       --bg: #f6f7fb;
@@ -18,6 +18,10 @@
       --chi: #b91c1c;
       --chi-soft: #fef2f2;
       --chi-border: #fecaca;
+
+      --eng: #b45309;
+      --eng-soft: #fffbeb;
+      --eng-border: #fde68a;
 
       --ict: #2563eb;
       --ict-soft: #eff6ff;
@@ -56,6 +60,10 @@
       --chi: #f87171;
       --chi-soft: rgba(185, 28, 28, 0.18);
       --chi-border: rgba(248, 113, 113, 0.35);
+
+      --eng: #fbbf24;
+      --eng-soft: rgba(217, 119, 6, 0.2);
+      --eng-border: rgba(251, 191, 36, 0.38);
 
       --ict: #60a5fa;
       --ict-soft: rgba(37, 99, 235, 0.18);
@@ -266,6 +274,12 @@
       gap: 22px;
       margin-bottom: 32px;
     }
+    .subjects-grid-core {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-bottom: 24px;
+    }
 
     .subject-card {
       background: var(--surface);
@@ -283,6 +297,7 @@
       box-shadow: var(--shadow-lg);
     }
     .card-chi { --accent: var(--chi); --accent-soft: var(--chi-soft); --accent-border: var(--chi-border); }
+    .card-eng { --accent: var(--eng); --accent-soft: var(--eng-soft); --accent-border: var(--eng-border); }
     .card-math { --accent: var(--math); --accent-soft: var(--math-soft); --accent-border: var(--math-border); }
     .card-ict { --accent: var(--ict); --accent-soft: var(--ict-soft); --accent-border: var(--ict-border); }
     .card-phy { --accent: var(--phy); --accent-soft: var(--phy-soft); --accent-border: var(--phy-border); }
@@ -411,8 +426,13 @@
       color: var(--text-muted);
     }
 
+    @media (max-width: 1080px) {
+      .subjects-grid-core {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
     @media (max-width: 960px) {
-      .hero, .subjects-grid, .tips-grid {
+      .hero, .subjects-grid, .subjects-grid-core, .tips-grid {
         grid-template-columns: 1fr;
       }
       .hero { padding: 24px 22px; }
@@ -439,7 +459,7 @@
       <div>
         <div class="hero-eyebrow">2027 屆 HKDSE 考生專屬 · 離線／線上雙支援</div>
         <h1>一站式 DSE 核心與選修科複習寶典</h1>
-        <p>整合 <strong>中國語文</strong>、<strong>數學必修部分（Mathematics）</strong>、<strong>資訊及通訊科技（ICT）</strong> 與 <strong>物理（Physics）</strong> 四大科目精讀筆記、Paper 2 MC 秒殺攻略、Paper 1 壓軸難題庫、互動模擬實驗室、公式圖表庫與歷屆真題詳解。所有溫習掌握進度與錯題收藏均自動儲存在本地瀏覽器中。</p>
+        <p>整合 <strong>中國語文</strong>、<strong>英國語文（English Language）</strong>、<strong>數學必修部分（Mathematics）</strong>、<strong>資訊及通訊科技（ICT）</strong> 與 <strong>物理（Physics）</strong> 五大科目精讀筆記、寫作範文格式與口試話術、聆聽題型拆解、數學秒殺攻略、互動實驗室與歷屆真題詳解。所有溫習掌握進度與錯題收藏均自動儲存在本地瀏覽器中。</p>
       </div>
       <div class="countdown-card">
         <div class="countdown-label">距離 2027 HKDSE 筆試開考（預計 2027 年 4 月 8 日）</div>
@@ -462,11 +482,11 @@
     </section>
 
     <div class="section-head">
-      <h2>選擇複習科目</h2>
-      <span>點擊下方任意科目進入專屬溫習系統</span>
+      <h2>核心科目（Core Subjects）</h2>
+      <span>中・英・數三大必修主科，點擊進入專屬奪星複習室</span>
     </div>
 
-    <section class="subjects-grid">
+    <section class="subjects-grid-core">
       <!-- Chinese -->
       <article class="subject-card card-chi">
         <div class="card-top">
@@ -488,6 +508,29 @@
           <strong id="progChi">已掌握 0 項 · ★ 0</strong>
         </div>
         <a class="enter-btn" href="./chinese/index.html">進入中國語文複習室 →</a>
+      </article>
+
+      <!-- English -->
+      <article class="subject-card card-eng">
+        <div class="card-top">
+          <span class="subject-tag">核心科目 · Paper 2 · 3A · 4</span>
+          <span class="subject-icon">🖋️</span>
+        </div>
+        <h3>英國語文科 (English)</h3>
+        <div class="subject-sub">P2 格式・5** 範文・套話 · P3A 聆聽 · P4 口試話術</div>
+        <p class="subject-desc">緊貼 2024–2027 四選一新制，收錄 Paper 2 十大文體答題紙格式與 6 篇互動亮點 5** 範文、Paper 3A 八大聆聽題型排雷，以及 Paper 4 口試話術與計時抽題器。</p>
+        <ul class="feature-list">
+          <li>Paper 2 十大文體排版格式範本 ＋ 稱謂下款速查矩陣</li>
+          <li>6 篇 Part A/B 5** 範文（互動詞彙／句型／結構亮點標註）</li>
+          <li>六大功能套話背誦遮蓋 ＋ L3 ➔ L5** 句型與詞彙升級表</li>
+          <li>Paper 3A 八大題型示例（含 SVG 平面圖／趨勢圖與語音練耳）</li>
+          <li>Paper 4 小組討論話術、自然口語連接詞 ＋ 1m/8m 計時模擬器</li>
+        </ul>
+        <div class="progress-mini">
+          <span>本地溫習進度</span>
+          <strong id="progEng">已掌握 0 / 31 · ★ 0</strong>
+        </div>
+        <a class="enter-btn" href="./english/index.html">進入英文科複習室 →</a>
       </article>
 
       <!-- Mathematics -->
@@ -512,6 +555,14 @@
         </div>
         <a class="enter-btn" href="./maths/index.html">進入數學科複習室 →</a>
       </article>
+    </section>
+
+    <div class="section-head">
+      <h2>選修科目（Elective Subjects）</h2>
+      <span>ICT 與物理全課程精讀筆記、互動實驗室及公式圖表庫</span>
+    </div>
+
+    <section class="subjects-grid">
 
       <!-- ICT -->
       <article class="subject-card card-ict">
@@ -567,11 +618,11 @@
       </div>
       <div class="tip-card">
         <h4>🔎 全站搜尋與列印友善</h4>
-        <p>三科內頁皆支援快捷鍵 <code>/</code> 即時搜尋考點、深色護眼模式，以及乾淨的筆記列印排版，方便印出重點背誦。</p>
+        <p>五科內頁皆支援快捷鍵 <code>/</code> 即時搜尋考點、深色護眼模式，以及乾淨的筆記列印排版，方便印出重點背誦。</p>
       </div>
       <div class="tip-card">
         <h4>☁️ GitHub Actions 自動持續更新</h4>
-        <p>未來若要新增數學、英文或其他選修科，只需在倉庫加入對應資料夾並推送，網站便會自動同步上線。</p>
+        <p>未來若要新增公民科或其他選修科，只需在倉庫加入對應資料夾並推送，網站便會自動同步上線。</p>
       </div>
     </section>
   </main>
@@ -607,7 +658,7 @@
       tick();
       setInterval(tick, 30000);
 
-      /* Read Real-time Progress Across All 3 Subjects from Shared Origin localStorage */
+      /* Read Real-time Progress Across All 5 Subjects from Shared Origin localStorage */
       function countObj(key) {
         try {
           var v = JSON.parse(localStorage.getItem(key) || "{}");
@@ -616,6 +667,8 @@
       }
       document.getElementById("progChi").textContent =
         "已掌握 " + countObj("dse2027_chi_done_v1") + " / 25 · ★ " + countObj("dse2027_chi_star_v1");
+      document.getElementById("progEng").textContent =
+        "已掌握 " + countObj("dse2027_eng_mastered") + " / 31 · ★ " + countObj("dse2027_eng_bookmarks");
       document.getElementById("progMath").textContent =
         "已攻克 " + countObj("dse2027_math_mastered") + " / 25 · ★ " + countObj("dse2027_math_bookmarks");
       document.getElementById("progIct").textContent =
