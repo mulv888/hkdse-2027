@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2027 HKDSE 複習總控台 | 中國語文 · 英國語文 · 數學必修 · ICT 資訊及通訊科技 · 物理 Physics</title>
+  <title>2027 HKDSE 複習總控台 | 中國語文 · 英國語文 · 數學必修 · ICT · 物理 Physics · 生物 Biology</title>
   <style>
     :root {
       --bg: #f6f7fb;
@@ -34,6 +34,10 @@
       --math: #0f766e;
       --math-soft: #f0fdfa;
       --math-border: #99f6e4;
+
+      --bio: #15803d;
+      --bio-soft: #ecfdf5;
+      --bio-border: #a7f3d0;
 
       --emerald: #059669;
       --emerald-soft: #ecfdf5;
@@ -76,6 +80,10 @@
       --math: #2dd4bf;
       --math-soft: rgba(15, 118, 110, 0.2);
       --math-border: rgba(45, 212, 191, 0.35);
+
+      --bio: #4ade80;
+      --bio-soft: rgba(22, 163, 74, 0.18);
+      --bio-border: rgba(74, 222, 128, 0.35);
 
       --emerald: #34d399;
       --emerald-soft: rgba(5, 150, 105, 0.18);
@@ -270,7 +278,7 @@
 
     .subjects-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 22px;
       margin-bottom: 32px;
     }
@@ -301,6 +309,7 @@
     .card-math { --accent: var(--math); --accent-soft: var(--math-soft); --accent-border: var(--math-border); }
     .card-ict { --accent: var(--ict); --accent-soft: var(--ict-soft); --accent-border: var(--ict-border); }
     .card-phy { --accent: var(--phy); --accent-soft: var(--phy-soft); --accent-border: var(--phy-border); }
+    .card-bio { --accent: var(--bio); --accent-soft: var(--bio-soft); --accent-border: var(--bio-border); }
 
     .card-top {
       display: flex;
@@ -427,7 +436,7 @@
     }
 
     @media (max-width: 1080px) {
-      .subjects-grid-core {
+      .subjects-grid-core, .subjects-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
@@ -459,7 +468,7 @@
       <div>
         <div class="hero-eyebrow">2027 屆 HKDSE 考生專屬 · 離線／線上雙支援</div>
         <h1>一站式 DSE 核心與選修科複習寶典</h1>
-        <p>整合 <strong>中國語文</strong>、<strong>英國語文（English Language）</strong>、<strong>數學必修部分（Mathematics）</strong>、<strong>資訊及通訊科技（ICT）</strong> 與 <strong>物理（Physics）</strong> 五大科目精讀筆記、寫作範文格式與口試話術、聆聽題型拆解、數學秒殺攻略、互動實驗室與歷屆真題詳解。所有溫習掌握進度與錯題收藏均自動儲存在本地瀏覽器中。</p>
+        <p>整合 <strong>中國語文</strong>、<strong>英國語文（English Language）</strong>、<strong>數學必修部分（Mathematics）</strong>、<strong>資訊及通訊科技（ICT）</strong>、<strong>物理（Physics）</strong> 與 <strong>生物（Biology · EMI）</strong> 六大科目精讀筆記、寫作範文格式與口試話術、數學秒殺攻略、按單元生物專有名詞庫、互動實驗室與歷屆考點詳解。所有溫習掌握進度與錯題收藏均自動儲存在本地瀏覽器中。</p>
       </div>
       <div class="countdown-card">
         <div class="countdown-label">距離 2027 HKDSE 筆試開考（預計 2027 年 4 月 8 日）</div>
@@ -559,7 +568,7 @@
 
     <div class="section-head">
       <h2>選修科目（Elective Subjects）</h2>
-      <span>ICT 與物理全課程精讀筆記、互動實驗室及公式圖表庫</span>
+      <span>ICT、物理與生物（EMI）全課程精讀筆記、專有名詞庫、互動實驗室及圖表庫</span>
     </div>
 
     <section class="subjects-grid">
@@ -609,6 +618,29 @@
         </div>
         <a class="enter-btn" href="./physics/index.html">進入物理科複習室 →</a>
       </article>
+
+      <!-- Biology -->
+      <article class="subject-card card-bio">
+        <div class="card-top">
+          <span class="subject-tag">選修科目 · EMI 英文主導 / 雙語</span>
+          <span class="subject-icon">🧬</span>
+        </div>
+        <h3>生物科 (Biology)</h3>
+        <div class="subject-sub">Paper 1 (Ch 1–30) · 選修 E1–E4 全覆蓋 · 按單元專有名詞庫</div>
+        <p class="subject-desc">緊扣 2027 DSE 英文部課本與考評局術語，預設 ENG 模式並支援 EN+繁中／繁中一鍵切換，完整涵蓋五大必修單元、全部四大選修（E1–E4）與專有名詞特訓室。</p>
+        <ul class="feature-list">
+          <li>Paper 1 必修 U1–U5（第 1–30 章）詳盡筆記與評分關鍵詞</li>
+          <li>Paper 2 全部四個選修：E1 人體生理、E2 應用生態、E3 微生物、E4 生物工程</li>
+          <li>按單元分類專有名詞庫（193 個核心詞彙、語音發音、翻轉字卡與拼寫特訓）</li>
+          <li>12 組 DSE 高危易混淆詞辨析 ＋ 關鍵詞模糊背誦模式（按 R）</li>
+          <li>17 幅雙語矢量 SVG 生物圖解 ＋ 35 題實戰選擇題庫</li>
+        </ul>
+        <div class="progress-mini">
+          <span>本地溫習進度</span>
+          <strong id="progBio">已掌握 0 項 · 詞彙 0</strong>
+        </div>
+        <a class="enter-btn" href="./biology/index.html">進入生物科複習室 →</a>
+      </article>
     </section>
 
     <section class="tips-grid">
@@ -618,7 +650,7 @@
       </div>
       <div class="tip-card">
         <h4>🔎 全站搜尋與列印友善</h4>
-        <p>五科內頁皆支援快捷鍵 <code>/</code> 即時搜尋考點、深色護眼模式，以及乾淨的筆記列印排版，方便印出重點背誦。</p>
+        <p>六科內頁皆支援快捷鍵 <code>/</code> 即時搜尋考點、深色護眼模式，以及乾淨的筆記列印排版，方便印出重點背誦。</p>
       </div>
       <div class="tip-card">
         <h4>☁️ GitHub Actions 自動持續更新</h4>
@@ -675,6 +707,8 @@
         "已掌握 " + countObj("dse_ict_2027_mastered") + " 項 · ★ " + countObj("dse_ict_2027_bookmarks");
       document.getElementById("progPhy").textContent =
         "已掌握 " + countObj("dse2027_phy_mastered") + " 項 · ★ " + countObj("dse2027_phy_bookmarks");
+      document.getElementById("progBio").textContent =
+        "已掌握 " + countObj("dse2027_bio_mastered") + " 項 · 詞彙 " + countObj("dse2027_bio_vocab_mastered") + " · ★ " + countObj("dse2027_bio_bookmarks");
     })();
   </script>
 </body>

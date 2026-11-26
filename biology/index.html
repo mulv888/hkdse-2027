@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2027 HKDSE Biology Revision Hub (EMI) | Compulsory (U1–U5) · Electives (E1–E4) · Vocabulary</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Sticky Top Header -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" title="Menu / 目錄">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <a href="../index.html" class="icon-btn back-hub-btn" title="Back to 2027 HKDSE Hub / 返回科目總覽">← Hub</a>
+        <a href="#overview" class="brand" id="brandLink">
+          <span class="brand-badge">DSE 2027 · EMI</span>
+          <span class="brand-text">
+            <span class="brand-title" data-i18n="siteTitle">HKDSE Biology Revision Hub</span>
+            <span class="brand-sub" data-i18n="siteSub">Compulsory (Ch 1–30) · Electives E1–E4 · Unit Vocabulary</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Global Search -->
+      <div class="search-wrap" id="searchWrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" id="globalSearch" class="search-input" autocomplete="off" placeholder="Search topics, terms, diagrams (e.g. osmosis, ADH, Calvin cycle, PCR, 滲透)..." />
+        <kbd class="search-kbd">/</kbd>
+        <div class="search-results" id="searchResults" hidden></div>
+      </div>
+
+      <!-- Header Controls -->
+      <div class="topbar-right">
+        <div class="lang-switch" role="group" aria-label="Language mode">
+          <button class="lang-btn active" data-set-lang="en" title="English EMI Primary (Press L to switch)">ENG</button>
+          <button class="lang-btn" data-set-lang="both" title="Bilingual EN + TC (Press L to switch)">EN+繁中</button>
+          <button class="lang-btn" data-set-lang="zh" title="繁體中文（按 L 切換）">繁中</button>
+        </div>
+        <button class="icon-btn" id="recallToggle" aria-label="Toggle active recall blur" title="Active Recall Mode: Hide/Reveal bold keywords (Press R)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle Dark/Light Theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="icon-btn print-btn" id="printBtn" aria-label="Print current page" title="Print Notes / Vocab List">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Primary Section Tabs -->
+    <nav class="section-tabs" id="sectionTabs" aria-label="Primary sections">
+      <div class="section-tabs-inner">
+        <button class="tab-btn active" data-view="overview" id="tab-overview">
+          <span class="tab-dot dot-slate"></span>
+          <span data-i18n="navOverview">Overview</span>
+        </button>
+        <button class="tab-btn" data-view="compulsory" id="tab-compulsory">
+          <span class="tab-dot dot-core"></span>
+          <span data-i18n="navCompulsory">Paper 1 Compulsory (U1–U5)</span>
+        </button>
+        <button class="tab-btn" data-view="electives" id="tab-electives">
+          <span class="tab-dot dot-elec"></span>
+          <span data-i18n="navElectives">Paper 2 Electives (E1–E4)</span>
+        </button>
+        <button class="tab-btn" data-view="vocab" id="tab-vocab">
+          <span class="tab-dot dot-vocab"></span>
+          <span data-i18n="navVocab">Vocabulary Bank</span>
+        </button>
+        <button class="tab-btn" data-view="diagrams" id="tab-diagrams">
+          <span class="tab-dot dot-diag"></span>
+          <span data-i18n="navDiagrams">Core Diagrams</span>
+        </button>
+        <button class="tab-btn" data-view="quiz" id="tab-quiz">
+          <span class="tab-dot dot-quiz"></span>
+          <span data-i18n="navQuiz">Practice Quiz</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Workspace Layout -->
+  <div class="app-shell">
+    <!-- Left Sidebar -->
+    <aside class="sidebar" id="sidebar" aria-label="Syllabus navigation">
+      <div class="sidebar-header">
+        <div class="progress-widget">
+          <div class="progress-row">
+            <span class="progress-label" data-i18n="masteryProgress">Topic Mastery</span>
+            <span class="progress-pct" id="masteryPct">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="masteryFill" style="width: 0%"></div>
+          </div>
+          <div class="progress-meta">
+            <span id="masteryCount">0 / 0</span>
+            <button class="text-link-btn" id="filterBookmarksBtn">★ Bookmarks (0)</button>
+          </div>
+          <div class="progress-meta vocab-meta">
+            <span data-i18n="vocabMastery">Vocab Mastered</span>
+            <strong id="vocabMasteryCount">0 / 0</strong>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-nav" id="sidebarNav"></div>
+    </aside>
+
+    <!-- Mobile Backdrop -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent"></main>
+  </div>
+
+  <!-- Diagram Zoom Lightbox Modal -->
+  <div class="modal-overlay" id="diagramModal" hidden aria-modal="true" role="dialog">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap" id="modalTitle"></div>
+        <button class="icon-btn" id="closeModalBtn" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Global Data Registries (file:// friendly, zero CORS / zero external CDN) -->
+  <script>
+    window.BIO_META = {};
+    window.BIO_UNITS = [];
+    window.BIO_VOCAB = [];
+    window.BIO_CONFUSING_PAIRS = [];
+    window.BIO_DIAGRAMS_DATA = [];
+    window.BIO_QUIZZES = [];
+  </script>
+
+  <!-- Offline Text & SVG Diagram Engines -->
+  <script src="js/text.js"></script>
+  <script src="js/diagrams.js"></script>
+
+  <!-- Metadata & Syllabus Data Modules -->
+  <script src="data/meta.js"></script>
+  <script src="data/unit1_cells.js"></script>
+  <script src="data/unit2_organisms.js"></script>
+  <script src="data/unit3_coordination.js"></script>
+  <script src="data/unit4_ecology_health.js"></script>
+  <script src="data/unit5_genetics_evo.js"></script>
+  <script src="data/elective_e1.js"></script>
+  <script src="data/elective_e2.js"></script>
+  <script src="data/elective_e3.js"></script>
+  <script src="data/elective_e4.js"></script>
+
+  <!-- Vocabulary, Diagrams Metadata & Quizzes -->
+  <script src="data/vocab_core.js"></script>
+  <script src="data/vocab_electives.js"></script>
+  <script src="data/diagrams_data.js"></script>
+  <script src="data/quizzes.js"></script>
+
+  <!-- Interactive Modules & Main SPA Controller -->
+  <script src="js/vocab.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

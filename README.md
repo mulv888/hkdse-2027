@@ -3,11 +3,11 @@
 # 🎓 2027 HKDSE 全科複習總控台 (HKDSE 2027 Revision Hub)
 
 **專為 2027 屆香港中學文憑試（HKDSE）考生打造的一站式互動複習平台**  
-涵蓋 **中國語文** · **英國語文 (English)** · **數學必修 (Mathematics)** · **資訊及通訊科技 (ICT)** · **物理 (Physics)**
+涵蓋 **中國語文** · **英國語文 (English)** · **數學必修 (Mathematics)** · **資訊及通訊科技 (ICT)** · **物理 (Physics)** · **生物 (Biology · EMI)**
 
 [![Deploy to GitHub Pages](https://github.com/mulv888/hkdse-2027/actions/workflows/deploy.yml/badge.svg)](https://github.com/mulv888/hkdse-2027/actions/workflows/deploy.yml)
 ![HKDSE 2027](https://img.shields.io/badge/HKDSE-2027_Syllabus-b91c1c?style=flat-square)
-![Subjects](https://img.shields.io/badge/Subjects-Chinese%20%7C%20English%20%7C%20Maths%20%7C%20ICT%20%7C%20Physics-2563eb?style=flat-square)
+![Subjects](https://img.shields.io/badge/Subjects-Chinese%20%7C%20English%20%7C%20Maths%20%7C%20ICT%20%7C%20Physics%20%7C%20Biology-15803d?style=flat-square)
 ![Zero Dependencies](https://img.shields.io/badge/Architecture-Pure_HTML%2FCSS%2FJS-059669?style=flat-square)
 ![Offline Ready](https://img.shields.io/badge/Mode-Online_%26_Offline_Ready-7c3aed?style=flat-square)
 
@@ -23,12 +23,13 @@
 
 | 入口 / 科目 | 線上直達網址 | 語言 / 閱讀模式 | 核心亮點 |
 | :--- | :--- | :--- | :--- |
-| 🏠 **2027 DSE 複習總控台** | [mulv888.github.io/hkdse-2027/](https://mulv888.github.io/hkdse-2027/) | 繁體中文 | 開考倒數計時器、五科溫習進度總覽、一鍵跳轉各科 |
+| 🏠 **2027 DSE 複習總控台** | [mulv888.github.io/hkdse-2027/](https://mulv888.github.io/hkdse-2027/) | 繁體中文 | 開考倒數計時器、六科溫習進度總覽、一鍵跳轉各科 |
 | 📜 **中國語文科 (Chinese)** | [mulv888.github.io/hkdse-2027/chinese/](https://mulv888.github.io/hkdse-2027/chinese/) | 古白對照 / 背誦默書 | 十二篇範文精讀（16 篇）、文言字詞總集、2018–2026 真題、卷二寫作與名句默書 |
 | 🖋️ **英國語文科 (English)** | [mulv888.github.io/hkdse-2027/english/](https://mulv888.github.io/hkdse-2027/english/) | 精讀 / 背誦遮蓋 / 朗讀 | Paper 2 十大文體格式、6 篇 5** 標註範文與套話升呢、Paper 3A 八大聆聽題型、Paper 4 口試話術連接詞與 1m/8m 計時器 |
 | 📐 **數學必修 (Mathematics)** | [mulv888.github.io/hkdse-2027/maths/](https://mulv888.github.io/hkdse-2027/maths/) | 繁中 / 中英對照 / ENG | Paper 2 八大通法與 12 Topic 秒殺技巧、Paper 1 壓軸難題與 M/A 評分詳解、計數機 Program、限時刷題與錯題本 |
 | 💻 **資訊及通訊科技 (ICT)** | [mulv888.github.io/hkdse-2027/ict/](https://mulv888.github.io/hkdse-2027/ict/) | 繁中 / 中英對照 / ENG | 必修 A–E、選修 A 數據庫（SQL）、選修 C Python、互動實驗室、速查表 |
 | ⚛️ **物理科 (Physics)** | [mulv888.github.io/hkdse-2027/physics/](https://mulv888.github.io/hkdse-2027/physics/) | 繁中 / 中英對照 / ENG | Book 1–5、選修 E2 原子世界、選修 E3 能源使用、公式推導寶庫、高清 SVG 圖表 |
+| 🧬 **生物科 (Biology · EMI)** | [mulv888.github.io/hkdse-2027/biology/](https://mulv888.github.io/hkdse-2027/biology/) | **ENG 主導** / EN+繁中 / 繁中 | 必修 U1–U5（Ch 1–30）、選修 E1–E4 全覆蓋、193 個按單元專有名詞庫（字卡／拼寫／發音）、17 幅雙語 SVG 圖解 |
 
 ---
 
@@ -123,6 +124,27 @@
 
 ---
 
+### 6. 🧬 生物科 Biology (`biology/` — EMI 英文授課專屬)
+專為 **2027 屆英文授課（EMI）HKDSE 生物科考生** 打造，緊扣考評局課程大綱及牛津《*New Senior Secondary Mastering Biology*》／雅集英文課本用詞。**預設為 ENG 模式**，支援一鍵切換 **`ENG` / `EN+繁中` / `繁中`**（快捷鍵 `L`），並內建 **主動回憶關鍵詞模糊遮蓋模式**（快捷鍵 `R`）：
+
+- **Paper 1 必修部分（5 大單元 · 完整覆蓋第 1–30 章）**：
+  - **Unit 1 (`Book 1A · Ch 1–4`)**：科學方法與 NOS、生命分子（水、無機離子、四大生物分子）、顯微鏡與細胞超微結構（原核 vs 真核）、流動鑲嵌模型與物質跨膜（擴散／滲透水勢／主動轉運／吞噬）、酶與新陳代謝（競爭／非競爭性抑制劑）。
+  - **Unit 2 (`Book 1A/1B · Ch 5–10`)**：七大食物與食物試驗、人體消化道／絨毛雙途徑吸收與肝臟功能、氣體交換與通氣機制、血液／心臟雙循環與組織液、植物葉片適應／補償點、蒸騰拉力／木質部與韌皮部轉運。
+  - **Unit 3 (`Book 2/3 · Ch 11–18`)**：有絲與減數分裂（變異來源）、植物營養繁殖與有性生殖、人類生殖／胎盤與避孕、種子萌發與生長曲線、人眼調節／人耳／向光性與生長素、神經元／突觸／反射弧與激素協調、拮抗肌關節、血糖負反饋體內平衡。
+  - **Unit 4 (`Book 3/4 · Ch 19–24`)**：生態系／演替／能量流／碳與氮循環、光合作用（光化學反應＋卡爾文循環＋限制因素）、細胞呼吸四階段與氧債、傳染病與抗生素抗藥性、冠心病與癌症、非特異與特異性免疫（B/T 細胞／初次與再次免疫反應／疫苗）。
+  - **Unit 5 (`Book 4 · Ch 25–30`)**：孟德爾定律／ABO 共顯性／X 性連鎖／考評局譜系推斷模板、DNA 半保留複製／轉錄轉譯與移碼突變、三域六界分類與動植物分門、進化證據／達爾文自然選擇五步模板與物種形成。
+- **Paper 2 選修部分（全部 4 個選修 E1–E4 完整收錄）**：
+  - **Elective E1 人體生理學：調節與控制**：腎元超濾／重吸收／ADH 負反饋與洗腎機、皮膚與下丘腦體溫調節、化學感受器／竇房結心輸出量調節、月經周期四大激素（FSH/LH/雌激素/孕酮）正負反饋。
+  - **Elective E2 應用生態學**：濫伐／單一耕作／過度捕魚、富營養化與紅潮六步機制、BOD 溶氧下陷曲線、生物累積 vs 生物放大、污水三級處理、酸雨與全球暖化、就地與異地保育及可持續發展。
+  - **Elective E3 微生物與人類**：病毒裂解周期、四階段微生物生長曲線、無菌技術與活菌／總菌計數、食物發酵與工業發酵槽（青黴素分批培養）、沼氣與生物修復、食物防腐原理與抗生素抑菌圈試驗。
+  - **Elective E4 生物工程**：重組 DNA 六步選殖與篩選、PCR 三步熱循環（*Taq* 聚合酶）、凝膠電泳與 DNA 指紋親子鑑定鐵律、植物組織培養與體細胞核轉移複製、基因治療／幹細胞／單克隆抗體、基改作物與生物倫理安全。
+- **🔤 按單元分類專有名詞庫（Vocabulary Bank · 4 大記憶模式）**：
+  - 精選 **193 個 HKDSE 生物必背專有名詞**，嚴格按 **U1–U5 及 E1–E4 九大單元**分類，逐詞附標準英式課本拼寫、香港官方繁中譯名、中英課本定義、考評貼士與 **🔊 英式英語發音朗讀**。
+  - 內建 **按單元詞彙表（支援遮蓋英文／中文／定義背誦）**、**翻轉記憶字卡（Flashcards）**、**EMI 精準英文拼寫挑戰與快速配對特訓**，以及 **12 組高危易混淆專有名詞對照表**（如 *Glycogen vs Glucagon*、*Ureter vs Urethra*、*Stoma vs Stroma*）。
+- **🔬 17 幅雙語高清 SVG 生物圖解 ＋ 📝 35 題跨單元實戰選擇題**：所有圖表標籤隨中英切換同步更新並支援全螢幕點擊放大，測驗題附評卷參考級雙語解析。
+
+---
+
 ## 🏗️ 系統與自動部署架構
 
 本專案採用單一倉庫（Monorepo）管理所有科目，透過 **GitHub Actions** 兩階段流水線（`build` ➔ `deploy`）全自動發布至 **GitHub Pages**：
@@ -139,6 +161,7 @@ flowchart LR
     E --> F4["📐 數學必修 /maths/"]
     E --> F5["💻 ICT /ict/"]
     E --> F6["⚛️ 物理 /physics/"]
+    E --> F7["🧬 生物 /biology/"]
 ```
 
 ---
@@ -147,7 +170,7 @@ flowchart LR
 
 ```text
 hkdse-2027/
-├── index.html                        # 2027 HKDSE 複習總控台首頁（倒數計時 + 五科進度儀表板）
+├── index.html                        # 2027 HKDSE 複習總控台首頁（倒數計時 + 六科進度儀表板）
 ├── README.md                         # 專案說明文件
 ├── .nojekyll                         # 告知 GitHub Pages 直接提供靜態資源
 ├── .gitignore                        # 排除系統暫存檔與壓縮檔
@@ -174,11 +197,16 @@ hkdse-2027/
 │   ├── css/styles.css
 │   ├── data/                         # Paper 1 (A–E)、Elective A/C、Quizzes
 │   └── js/                           # app.js、labs.js、quiz.js
-└── physics/                          # ⚛️ 物理科 (Physics) 複習寶典
+├── physics/                          # ⚛️ 物理科 (Physics) 複習寶典
+│   ├── index.html
+│   ├── css/styles.css
+│   ├── data/                         # Book 1–5、Elective E2/E3、Formulas、Diagrams、Quizzes
+│   └── js/                           # app.js、math.js、diagrams.js、quiz.js
+└── biology/                          # 🧬 生物科 (Biology · EMI) 複習寶典
     ├── index.html
     ├── css/styles.css
-    ├── data/                         # Book 1–5、Elective E2/E3、Formulas、Diagrams、Quizzes
-    └── js/                           # app.js、math.js、diagrams.js、quiz.js
+    ├── data/                         # 必修 U1–U5(5檔)、選修 E1–E4(4檔)、按單元專有名詞(2檔)、圖表、題庫
+    └── js/                           # app.js、text.js、vocab.js（字卡/拼寫/發音）、diagrams.js、quiz.js
 ```
 
 ---
